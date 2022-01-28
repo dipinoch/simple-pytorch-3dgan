@@ -59,8 +59,8 @@ def trainer(args):
         # writer = SummaryWriter(params.output_dir+'/'+args.model_name+'/'+model_uid+'_'+args.logs+'/logs')
         writer = SummaryWriter(params.output_dir + '/' + args.model_name + '/' + args.logs + '/logs')
 
-        image_saved_path = params.output_dir + '/' + args.model_name + '/' + args.logs + '/images'
-        model_saved_path = params.output_dir + '/' + args.model_name + '/' + args.logs + '/models'
+        image_saved_path = '/content/images'
+        model_saved_path = '/content/models'
 
         if not os.path.exists(image_saved_path):
             os.makedirs(image_saved_path)
@@ -69,7 +69,7 @@ def trainer(args):
 
     # datset define
     # dsets_path = args.input_dir + args.data_dir + "train/"
-    dsets_path = params.data_dir + params.model_dir + "30/train/"
+    dsets_path = "/content/drive/MyDrive/simple-pytorch-3dgan/volumetric_data/chair/30/train/"
     # if params.cube_len == 64:
     #     dsets_path = params.data_dir + params.model_dir + "30/train64/"
 
