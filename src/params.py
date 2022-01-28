@@ -22,12 +22,12 @@ cube_len = 32
 leak_value = 0.2
 bias = False
 
-# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 device = torch.device('cuda')
-data_dir = '../volumetric_data/'
+data_dir = '/content/simple-pytorch-3dgan/volumetric_data/'
 model_dir = 'chair/'  # change it to train on other data models
-output_dir = '../outputs'
-# images_dir = '../test_outputs'
+output_dir = '/content/outputs'
+# images_dir = '/test_outputs'
+
 
 
 def print_params():
